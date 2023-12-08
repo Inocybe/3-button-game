@@ -9,13 +9,12 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private Transform shootPoint;
 
     public float shootCooldown;
-    public float bulletSpeed;
 
-    private float originalShootCooldown;
+    private float _originalShootCooldown;
 
     private void Start()
     {
-        originalShootCooldown = shootCooldown;
+        _originalShootCooldown = shootCooldown;
     }
 
     // Update is called once per frame
@@ -33,10 +32,9 @@ public class PlayerShoot : MonoBehaviour
     {
        if (Input.GetKeyDown(KeyCode.J))
        {
-            GameObject instantiatedBullet = Instantiate(bullet);
-            instantiatedBullet.transform.position = shootPoint.position;
-            instantiatedBullet.GetComponent<Rigidbody>().velocity = new Vector3(bulletSpeed, 0f, 0f);
-            shootCooldown = originalShootCooldown;
+           GameObject instantiatedBullet = Instantiate(bullet, shootPoint.position, Quaternion.identity); 
+           //instantiatedBullet.transform.position = shootPoint.position;
+           shootCooldown = _originalShootCooldown;
        }
     }
 }
