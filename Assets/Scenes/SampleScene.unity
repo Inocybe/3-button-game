@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8337375899705094964, guid: cf7b85b339add41b4a61b8d1517d1830, type: 3}
-  enemySpawnCoolDown: 0.5
+  enemySpawnCoolDown: 2
   enemiesPerWave: 10
 --- !u!4 &958492512
 Transform:

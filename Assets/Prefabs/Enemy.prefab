@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5739312363146316457}
   - component: {fileID: 9164546448384322792}
   - component: {fileID: 2434770015130702271}
+  - component: {fileID: 3587233756121972108}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -92,7 +93,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8337375899705094964}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 32b3ba122b081ea4b9bb2c43abfecb02, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -135,3 +136,16 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &3587233756121972108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8337375899705094964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c373d2e23493d4dbd13588da94cb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2.5
