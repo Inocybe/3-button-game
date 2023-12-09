@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        _move = Input.GetAxis("Horizontal") * -1;
+        _move = Input.GetAxis("Vertical");
 
         if (_move == 0)
         {

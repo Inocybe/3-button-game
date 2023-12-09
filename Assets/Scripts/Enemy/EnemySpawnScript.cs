@@ -54,7 +54,7 @@ public class EnemySpawnScript : MonoBehaviour
         if (_waveTimer <= 0 && spawnedEnemies.Count <= 0)
         {
             currentWave++;
-            StartCoroutine(WaveSpawnBreak());
+            GenerateWave();
         }
     }
 
@@ -94,13 +94,6 @@ public class EnemySpawnScript : MonoBehaviour
         enemiesToSpawn.Clear();
         enemiesToSpawn = generatedEnemies;
     }
-
-    IEnumerator WaveSpawnBreak()
-    {
-        yield return new WaitForSeconds(timeBetweenWaves);
-        GenerateWave();
-    }
-
 }
 
 [System.Serializable]
