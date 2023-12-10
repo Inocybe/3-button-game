@@ -27,6 +27,8 @@ public class EnemyScript : MonoBehaviour
 
     private void OnDestroy()
     {
+        
+        
         if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
         {
             GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<EnemySpawnScript>().spawnedEnemies.Remove(gameObject);
