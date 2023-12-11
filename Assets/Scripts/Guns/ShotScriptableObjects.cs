@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BulletScriptableObject", menuName = "ScriptableObjects/bullet")]
 public class BulletScriptableObject : ScriptableObject
 {
-    [SerializeField] public Rigidbody rb;
+    [SerializeField] public Transform shootPoint;
     public float bulletSpeed;
     public float destroyTimer;
+
+    private GameObject _shootPoint;
 }
