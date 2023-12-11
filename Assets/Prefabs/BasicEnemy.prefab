@@ -148,5 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c373d2e23493d4dbd13588da94cb0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropAble: {fileID: 5578468815257789229, guid: 95b81ec59bb966c4897beb2b787d5485,
+    type: 3}
+  dropChange: 4
   health: 1
   moveSpeed: 2.5

@@ -2,9 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyScript : MonoBehaviour
 {
+    [SerializeField] private GameObject dropAble;
+
+    public int dropChange;
     public float health;
     public float moveSpeed;
 
@@ -20,6 +24,11 @@ public class EnemyScript : MonoBehaviour
             health--;
             if (health <= 0)
             {
+                int drop = Random.Range(0, dropChange);
+        
+                if (drop == 0)
+                    Instantiate(dropAble, gameObject.transform.position, Quaternion.identity);
+                
                 Destroy(gameObject);
             }
         }
@@ -27,8 +36,6 @@ public class EnemyScript : MonoBehaviour
 
     private void OnDestroy()
     {
-        
-        
         if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
         {
             GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<EnemySpawnScript>().spawnedEnemies.Remove(gameObject);
