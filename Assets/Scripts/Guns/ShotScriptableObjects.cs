@@ -10,4 +10,6 @@ public class BulletScriptableObject : ScriptableObject
     public float destroyTimer;
 
     private GameObject _shootPoint;
+
+
 }
