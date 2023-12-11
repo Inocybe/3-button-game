@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eeb57d434705ff4082df18a7b8af90f, type: 3}
   m_Name: defaultParameters
   m_EditorClassIdentifier: 
+  bullet: {fileID: 120079183280804589, guid: 6cfe6a37ef3084044bb4e14057fbad0b, type: 3}
   shootPoint: {fileID: 0}
-  bullet: {fileID: 0}
-  bulletSpeed: 0
-  destroyTimer: 0
+  bulletSpeed: 7
+  destroyTimer: 3
+  originalShootCooldown: 7
