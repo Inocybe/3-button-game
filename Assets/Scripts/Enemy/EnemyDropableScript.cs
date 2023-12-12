@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyDropableScript : MonoBehaviour
 {
-    [SerializeField] private PlayerInventoryScript inventory;
+    private PlayerInventoryScript inventory;
     public Material[] drops;
 
     private Renderer _rend;
@@ -20,6 +20,8 @@ public class EnemyDropableScript : MonoBehaviour
         theDrop = Random.Range(0, drops.Length);
 
         _rend.sharedMaterial = drops[theDrop];
+
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventoryScript>();
     }
 
     private void Update()
@@ -31,10 +33,10 @@ public class EnemyDropableScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet") && _iFrames <= 0)
         {
-            Destroy(gameObject);
             inventory.Off();
             inventory.currGun = theDrop;
             inventory.On();
+            Destroy(gameObject);
         }
     }
 }
