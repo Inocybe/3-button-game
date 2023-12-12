@@ -17,5 +17,5 @@ public class SniperScript : MonoBehaviour
     void Update()
     {
         shootObject.Shoot();
-    }
+    }   
 }
