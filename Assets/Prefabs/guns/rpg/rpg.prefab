@@ -150,5 +150,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1568941c0ccb4d24d82fd114ff7075a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootPoint: {fileID: 0}
-  shootObject: {fileID: 0}
+  shootPoint: {fileID: 9040652453313314449}
+  shootObject: {fileID: 11400000, guid: cd53a8eaa27194547a771c8f3a120c88, type: 2}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,6 +186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShotGun
       objectReference: {fileID: 0}
+    - target: {fileID: 6748915994820637304, guid: 9809a4fcde7417f48b1c55cbd871ed15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -194,6 +199,12 @@ PrefabInstance:
 --- !u!4 &167433166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1546153341771969931, guid: 9809a4fcde7417f48b1c55cbd871ed15,
+    type: 3}
+  m_PrefabInstance: {fileID: 167433165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &167433167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748915994820637304, guid: 9809a4fcde7417f48b1c55cbd871ed15,
     type: 3}
   m_PrefabInstance: {fileID: 167433165}
   m_PrefabAsset: {fileID: 0}
@@ -613,6 +624,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sniper
       objectReference: {fileID: 0}
+    - target: {fileID: 6748915994820637304, guid: 1e8dc55f266dfe14b97ef2a4844bc7cb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -621,6 +637,12 @@ PrefabInstance:
 --- !u!4 &447059893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1546153341771969931, guid: 1e8dc55f266dfe14b97ef2a4844bc7cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 447059892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &447059894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748915994820637304, guid: 1e8dc55f266dfe14b97ef2a4844bc7cb,
     type: 3}
   m_PrefabInstance: {fileID: 447059892}
   m_PrefabAsset: {fileID: 0}
@@ -755,6 +777,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: rpg
       objectReference: {fileID: 0}
+    - target: {fileID: 6748915994820637304, guid: 349ce332d52f8f44c916f617b4e32bbd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -763,6 +790,12 @@ PrefabInstance:
 --- !u!4 &752411564 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1546153341771969931, guid: 349ce332d52f8f44c916f617b4e32bbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 752411563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &752411565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748915994820637304, guid: 349ce332d52f8f44c916f617b4e32bbd,
     type: 3}
   m_PrefabInstance: {fileID: 752411563}
   m_PrefabAsset: {fileID: 0}
@@ -943,6 +976,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f053293a06a224da773fd259d07b96, type: 3}
+--- !u!1 &1221350026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748915994820637304, guid: b9f053293a06a224da773fd259d07b96,
+    type: 3}
+  m_PrefabInstance: {fileID: 1221350025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1548408659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AK
       objectReference: {fileID: 0}
+    - target: {fileID: 6748915994820637304, guid: a7c94331025b2674db14dcec862cb2e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1080,6 +1124,12 @@ PrefabInstance:
 --- !u!4 &1576499060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1546153341771969931, guid: a7c94331025b2674db14dcec862cb2e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1576499059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1576499061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748915994820637304, guid: a7c94331025b2674db14dcec862cb2e5,
     type: 3}
   m_PrefabInstance: {fileID: 1576499059}
   m_PrefabAsset: {fileID: 0}
@@ -1097,6 +1147,7 @@ GameObject:
   - component: {fileID: 1664799971}
   - component: {fileID: 1664799970}
   - component: {fileID: 1664799969}
+  - component: {fileID: 1664799975}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1143,7 +1194,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 112
+  m_Constraints: 114
   m_CollisionDetection: 1
 --- !u!136 &1664799971
 CapsuleCollider:
@@ -1234,6 +1285,25 @@ Transform:
   - {fileID: 386232207}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664799975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664799968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a08fccd697a148a79361d0f191f8a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 1221350026}
+  - {fileID: 1576499061}
+  - {fileID: 752411565}
+  - {fileID: 167433167}
+  - {fileID: 447059894}
+  inventory: {fileID: 11400000, guid: 4eeec2c1f551141a390edf889b9730cc, type: 2}
 --- !u!1 &1786994379
 GameObject:
   m_ObjectHideFlags: 0

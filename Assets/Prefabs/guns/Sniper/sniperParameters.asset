@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 0}
   shootPoint: {fileID: 0}
-  bulletSpeed: 0
-  shootCooldown: 0
+  bulletSpeed: 10
+  shootCooldown: 6

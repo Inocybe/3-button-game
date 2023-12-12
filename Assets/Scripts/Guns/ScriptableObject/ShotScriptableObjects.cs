@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BulletScriptableObject", menuName = "ScriptableObjects/bullet")]
 public class BulletScriptableObject : ScriptableObject
 {
-    [HideInInspector] public GameObject bullet;
+    [SerializeField] public GameObject bullet;
     [HideInInspector] public Transform shootPoint;
     public float bulletSpeed;
     public float shootCooldown;
@@ -25,7 +25,7 @@ public class BulletScriptableObject : ScriptableObject
         {
             _shotBullet = Instantiate(bullet, shootPoint.transform.position, Quaternion.identity); 
             Rigidbody rb = _shotBullet.GetComponent<Rigidbody>();
-            rb.AddForce(bulletSpeed * Time.deltaTime, 0f, 0f, ForceMode.Impulse);
+            rb.AddForce(bulletSpeed, 0f, 0f, ForceMode.Impulse);
             
             _shootCooldown = shootCooldown;
         }
