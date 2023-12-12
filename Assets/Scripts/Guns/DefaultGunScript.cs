@@ -16,6 +16,13 @@ public class DefaultGunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        shootObject.Shoot();
+        shootObject.ShootCooldown();
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            GameObject bullet = Instantiate(shootObject.bullet, shootPoint.position, Quaternion.identity);
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
+            rb.AddForce(shootObject.bulletSpeed, 0f, 0f, ForceMode.Impulse);
+        }
     }
 }

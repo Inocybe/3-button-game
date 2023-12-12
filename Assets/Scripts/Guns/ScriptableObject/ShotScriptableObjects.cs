@@ -19,16 +19,8 @@ public class BulletScriptableObject : ScriptableObject
 
     private GameObject _shotBullet;
     
-    public void Shoot()
+    public void ShootCooldown()
     {
-        if (Input.GetKeyDown(KeyCode.J) && _shootCooldown <= 0)
-        {
-            _shotBullet = Instantiate(bullet, shootPoint.transform.position, Quaternion.identity); 
-            Rigidbody rb = _shotBullet.GetComponent<Rigidbody>();
-            rb.AddForce(bulletSpeed, 0f, 0f, ForceMode.Impulse);
-            
-            _shootCooldown = shootCooldown;
-        }
         _shootCooldown -= Time.deltaTime;
     }
 }
