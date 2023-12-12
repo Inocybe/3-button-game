@@ -16,6 +16,6 @@ public class SniperScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        shootObject.Shoot();
+        //shootObject.Shoot();
     }   
 }
