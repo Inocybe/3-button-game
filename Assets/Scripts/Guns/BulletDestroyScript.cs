@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class BulletDestroyScript : MonoBehaviour
 {
+    public int bulletHealth = 1;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            bulletHealth--;
+            if (bulletHealth <= 0 )
+                Destroy(gameObject);
         }
     }
 }

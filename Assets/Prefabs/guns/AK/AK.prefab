@@ -152,3 +152,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 9040652453313314449}
   shootObject: {fileID: 11400000, guid: 6d10b160894e47e468dd5b565d5ea8d3, type: 2}
+  spread: 0.3

@@ -16,6 +16,13 @@ public class SniperScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //shootObject.Shoot();
-    }   
+        shootObject.ShootCooldown();
+
+        if (Input.GetKeyDown(KeyCode.J) && shootObject._shootCooldown <= 0f)
+        {
+            GameObject bullet = Instantiate(shootObject.bullet, shootPoint.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody>().AddForce(shootObject.bulletSpeed, 0f, 0f, ForceMode.Impulse);
+            shootObject._shootCooldown = shootObject.shootCooldown;
+        }
+    }
 }

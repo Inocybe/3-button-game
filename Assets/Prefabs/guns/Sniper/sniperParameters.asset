@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eeb57d434705ff4082df18a7b8af90f, type: 3}
   m_Name: sniperParameters
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  bullet: {fileID: 120079183280804589, guid: 14eec2fb09054c248b968e70b49fd9f9, type: 3}
   shootPoint: {fileID: 0}
   bulletSpeed: 10
   shootCooldown: 6
+  _shootCooldown: 0.5130239

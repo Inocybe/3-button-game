@@ -9,7 +9,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private GameObject dropAble;
 
     public int dropChange;
-    public float health;
+    public int health;
     public float moveSpeed;
 
     private void Update()

@@ -16,8 +16,6 @@ public class BulletScriptableObject : ScriptableObject
     {
         _shootCooldown = shootCooldown;
     }
-
-    private GameObject _shotBullet;
     
     public void ShootCooldown()
     {
