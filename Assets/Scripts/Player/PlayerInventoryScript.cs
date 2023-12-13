@@ -6,13 +6,15 @@ using UnityEngine;
 
 public class PlayerInventoryScript : MonoBehaviour
 {
+    public int startingGun;
+    
     public GameObject[] guns;
-    [HideInInspector] public int currGun = 0;
+    [HideInInspector] public int currGun;
     
     private void Start()
     {
-        for (int i = 1, len = guns.Length; i < len; i++)
-            guns[i].SetActive(false);
+        guns[startingGun].SetActive(true);
+        currGun = startingGun;
     }
 
     public void Off()

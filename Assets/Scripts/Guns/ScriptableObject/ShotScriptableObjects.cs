@@ -10,7 +10,7 @@ public class BulletScriptableObject : ScriptableObject
     public float bulletSpeed;
     public float shootCooldown;
 
-    private float _shootCooldown;
+    [HideInInspector] public float _shootCooldown;
 
     public void SetCooldown()
     {
