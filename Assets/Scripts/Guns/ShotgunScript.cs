@@ -9,7 +9,7 @@ public class ShotgunScript : MonoBehaviour
     [SerializeField] private Transform shootPoint;
     [SerializeField] public BulletScriptableObject shootObject;
 
-    public float minXForce;
+    public float spread;
     public int bulletCount;
 
     private void Start()
@@ -29,14 +29,10 @@ public class ShotgunScript : MonoBehaviour
             for (int i = 0, count = bulletCount; i < count; i++)
             {
                 //this shall go through each i iteration for amount of bullets shotgun has, and will basically do normal stuff
-                float xForce = Random.Range(minXForce, shootObject.bulletSpeed);
-                float zForce = shootObject.bulletSpeed - xForce;
+                float zForce = Random.Range(-spread, spread);
+                float xForce = shootObject.bulletSpeed - zForce;
                 GameObject bullet = Instantiate(shootObject.bullet, shootPoint.position, Quaternion.identity);
-                if (i % 2f == 0f)
-                    bullet.GetComponent<Rigidbody>().AddForce(xForce, 0f, zForce, ForceMode.Impulse);
-                else
-                    bullet.GetComponent<Rigidbody>().AddForce(xForce, 0f, -zForce, ForceMode.Impulse);
-                shootObject._shootCooldown = shootObject.shootCooldown;
+                bullet.GetComponent<Rigidbody>().AddForce(xForce, 0f, zForce, ForceMode.Impulse);
             }
         }
     }
