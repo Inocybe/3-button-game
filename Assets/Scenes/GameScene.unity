@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 1546153341771969931, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.479
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1546153341771969931, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
@@ -144,7 +144,7 @@ PrefabInstance:
     - target: {fileID: 1546153341771969931, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.223
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1546153341771969931, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
@@ -180,6 +180,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732751109283536799, guid: 9809a4fcde7417f48b1c55cbd871ed15,
+        type: 3}
+      propertyPath: minXForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6211882206086595292, guid: 9809a4fcde7417f48b1c55cbd871ed15,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6748915994820637304, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
@@ -970,6 +980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DefaultGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748915994820637304, guid: b9f053293a06a224da773fd259d07b96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
