@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -184,7 +184,12 @@ PrefabInstance:
     - target: {fileID: 3732751109283536799, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
       propertyPath: minXForce
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732751109283536799, guid: 9809a4fcde7417f48b1c55cbd871ed15,
+        type: 3}
+      propertyPath: bulletCount
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6211882206086595292, guid: 9809a4fcde7417f48b1c55cbd871ed15,
         type: 3}
@@ -201,7 +206,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2767586234953722774, guid: 9809a4fcde7417f48b1c55cbd871ed15, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1312,7 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a08fccd697a148a79361d0f191f8a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingGun: 3
+  startingGun: 1
   guns:
   - {fileID: 1221350026}
   - {fileID: 1576499061}

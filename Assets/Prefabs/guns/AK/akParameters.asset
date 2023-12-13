@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eeb57d434705ff4082df18a7b8af90f, type: 3}
   m_Name: akParameters
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  bullet: {fileID: 120079183280804589, guid: 12d3eed83c0d0bd45a97337eb918278c, type: 3}
   shootPoint: {fileID: 0}
   bulletSpeed: 5
   shootCooldown: 0.2
+  _shootCooldown: -10.095226

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - WaveSpawner
+  - Enemy
   layers:
   - Default
   - TransparentFX

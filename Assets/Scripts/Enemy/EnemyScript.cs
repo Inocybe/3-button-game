@@ -17,7 +17,7 @@ public class EnemyScript : MonoBehaviour
         transform.position += new Vector3(-moveSpeed * Time.deltaTime, 0, 0);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
