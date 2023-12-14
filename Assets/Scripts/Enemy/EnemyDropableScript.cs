@@ -11,7 +11,7 @@ public class EnemyDropableScript : MonoBehaviour
 
     private Renderer _rend;
     [HideInInspector] public int theDrop;
-    private float _iFrames = 0.5f;
+    private float _iFrames = 0.2f;
     
     private void Start()
     {

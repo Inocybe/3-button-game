@@ -152,4 +152,4 @@ MonoBehaviour:
     type: 3}
   dropChange: 4
   health: 1
-  moveSpeed: 2.5
+  moveSpeed: 1.5

@@ -15,5 +15,5 @@ MonoBehaviour:
   bullet: {fileID: 120079183280804589, guid: c956dc0b3f96e6146ba9f24721188bdd, type: 3}
   shootPoint: {fileID: 0}
   bulletSpeed: 6
-  shootCooldown: 3
-  _shootCooldown: -0.8995296
+  shootCooldown: 2
+  _shootCooldown: -1.1591705

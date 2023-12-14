@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -590,6 +590,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 386232207}
     m_Modifications:
+    - target: {fileID: 916430718332882770, guid: 1e8dc55f266dfe14b97ef2a4844bc7cb,
+        type: 3}
+      propertyPath: maxWalls
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1546153341771969931, guid: 1e8dc55f266dfe14b97ef2a4844bc7cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1085,7 +1090,7 @@ PrefabInstance:
     - target: {fileID: 1297995163518260477, guid: a7c94331025b2674db14dcec862cb2e5,
         type: 3}
       propertyPath: spread
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1546153341771969931, guid: a7c94331025b2674db14dcec862cb2e5,
         type: 3}
@@ -1328,7 +1333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a08fccd697a148a79361d0f191f8a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingGun: 2
+  startingGun: 4
   guns:
   - {fileID: 1221350026}
   - {fileID: 1576499061}

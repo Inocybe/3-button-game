@@ -12,7 +12,7 @@ public class EnemyScript : MonoBehaviour
     public int health;
     public float moveSpeed;
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.position += new Vector3(-moveSpeed * Time.deltaTime, 0, 0);
     }
@@ -22,15 +22,26 @@ public class EnemyScript : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             health--;
-            if (health <= 0)
-            {
-                int drop = Random.Range(0, dropChange);
+            Death();
+        }
+
+        if (other.gameObject.CompareTag("Explosion"))
+        {
+            health -= 2;
+            Death();
+        }
+    }
+
+    private void Death()
+    {
+        if (health <= 0)
+        {
+            int drop = Random.Range(0, dropChange);
         
-                if (drop == 0)
-                    Instantiate(dropAble, gameObject.transform.position, Quaternion.identity);
+            if (drop == 0)
+                Instantiate(dropAble, gameObject.transform.position, Quaternion.identity);
                 
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 
