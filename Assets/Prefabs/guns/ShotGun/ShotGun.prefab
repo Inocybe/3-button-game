@@ -152,5 +152,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 9040652453313314449}
   shootObject: {fileID: 11400000, guid: 66e33a9cf82864f4d90796cc226dbd50, type: 2}
-  minXForce: 4
+  spread: 5
   bulletCount: 3

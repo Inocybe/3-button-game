@@ -30,9 +30,12 @@ public class ShotgunScript : MonoBehaviour
             {
                 //this shall go through each i iteration for amount of bullets shotgun has, and will basically do normal stuff
                 float zForce = Random.Range(-spread, spread);
-                float xForce = shootObject.bulletSpeed - zForce;
+                float xForce = shootObject.bulletSpeed - Math.Abs(zForce);
+
                 GameObject bullet = Instantiate(shootObject.bullet, shootPoint.position, Quaternion.identity);
                 bullet.GetComponent<Rigidbody>().AddForce(xForce, 0f, zForce, ForceMode.Impulse);
+                
+                shootObject._shootCooldown = shootObject.shootCooldown;
             }
         }
     }
