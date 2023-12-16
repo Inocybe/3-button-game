@@ -20,7 +20,6 @@ public class EnemySpawnScript : MonoBehaviour
     private float _spawnTimer;
     
     public List<GameObject> spawnedEnemies = new List<GameObject>();
-    public int timeBetweenWaves;
     
     private void Start()
     {
@@ -63,8 +62,8 @@ public class EnemySpawnScript : MonoBehaviour
         waveValue = currentWave * 10;
         GenerateEnemies();
 
-        _spawnInterval = waveDuration / enemiesToSpawn.Count; //makes fixed time between enemies
-        _waveTimer = waveDuration;
+        _spawnInterval = (waveDuration * currentWave) / enemiesToSpawn.Count; //makes fixed time between enemies
+        _waveTimer = waveDuration * currentWave;
     }
 
     private void GenerateEnemies()
