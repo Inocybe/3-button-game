@@ -123,4 +123,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8a01d2af365107542a03c394e8bbaa34, type: 2}
   - {fileID: 2100000, guid: 72ef23771d1259c43a87d7c22e22b671, type: 2}
   - {fileID: 2100000, guid: eb823f090c1f90447a4a5b8ed0689294, type: 2}
-  - {fileID: 2100000, guid: 0df6f9053ee0eea41be63ba33539491c, type: 2}
+  theDrop: 0
