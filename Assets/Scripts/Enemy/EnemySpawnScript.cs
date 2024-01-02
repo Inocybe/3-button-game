@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 
 public class EnemySpawnScript : MonoBehaviour
 {
+    public scoreSript score;// score script
+    
     public List<Enemy> enemies = new List<Enemy>();
     public int currentWave;
     public int waveValue;

@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class EnemyScript : MonoBehaviour
 {
     [SerializeField] private GameObject dropAble;
-
+    
     public int dropChange;
     public int health;
     public float moveSpeed;

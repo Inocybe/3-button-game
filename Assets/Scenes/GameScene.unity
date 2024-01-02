@@ -806,8 +806,9 @@ GameObject:
   - component: {fileID: 624503373}
   - component: {fileID: 624503375}
   - component: {fileID: 624503374}
+  - component: {fileID: 624503376}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,6 +930,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624503372}
   m_CullTransparentMesh: 1
+--- !u!114 &624503376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624503372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8aecd4ac31c54b49970ca3d161271bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 624503374}
+  currentScore: 0
+  timer: 1
 --- !u!1 &636660809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,6 +1271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a8daa1c542d4e19b330130cfc3739b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 624503376}
   enemies:
   - enemyPrefab: {fileID: 8337375899705094964, guid: cf7b85b339add41b4a61b8d1517d1830,
       type: 3}
@@ -1265,10 +1282,10 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 8337375899705094964, guid: 93f90df5fc7bb6d4bba453596ddcef30,
       type: 3}
     cost: 2
-  currentWave: 12
+  currentWave: 1
   waveValue: 10
   enemiesToSpawn: []
-  waveDuration: 20
+  waveDuration: 15
   spawnedEnemies: []
 --- !u!4 &958492512
 Transform:

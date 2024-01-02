@@ -34,6 +34,6 @@ public class PlayerHealthScript : MonoBehaviour
 
     private void Death()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
